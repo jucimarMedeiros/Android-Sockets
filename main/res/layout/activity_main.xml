@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtValor2"
+        android:layout_width="316dp"
+        android:layout_height="45dp"
+        android:hint="Digite o segundo valor"
+        android:inputType="number"
+        android:maxLength="12"
+        android:maxLines="0"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.517"
+        tools:visibility="gone" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtValor1"
+        android:layout_width="316dp"
+        android:layout_height="45dp"
+        android:hint="Digite o primeiro valor"
+        android:inputType="number"
+        android:maxLength="12"
+        android:maxLines="0"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/txtValor2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        tools:visibility="gone" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtIp"
+        android:layout_width="316dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Informe o IP do servidor"
+        android:inputType="number|text"
+        android:maxLength="15"
+        android:maxLines="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/txtPorta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93"
+        app:met_mask=" ###.###.###.### " />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtPorta"
+        android:layout_width="316dp"
+        android:layout_height="45dp"
+        android:hint="Informe a porta do servidor"
+        android:inputType="number"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnConectar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <Button
+        android:id="@+id/btnConectar"
+        android:layout_width="298dp"
+        android:layout_height="54dp"
+        android:background="#2196F3"
+        android:text="Conectar"
+        android:textColor="#242020"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="298dp"
+        android:layout_height="54dp"
+        android:background="#2196F3"
+        android:text="Calcular"
+        android:textColor="#242020"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.616" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="231dp"
+        android:layout_height="38dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btnConectar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtValor2"
+        app:layout_constraintVertical_bias="0.497" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
