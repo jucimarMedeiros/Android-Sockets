@@ -26,12 +26,12 @@ public class ClassificacaoTriangulo2 {
     	if ((lado1 < lado2 + lado3) && (lado2 < lado1 + lado3) && (lado3 < lado1 + lado2)) {
             if (lado1 == lado2 && lado1 == lado3) {
                 res= "Triangulo Equilatero";
-            } else if ((lado1 == lado2) || (lado1 == lado3)) {
+            } else if ((lado1 == lado2) || (lado1 == lado3) || (lado2 == lado3)) {
                 res="Triangulo Isosceles";
             } else
-              res="Triângulo Escaleno";
+              res="TriÃ¢ngulo Escaleno";
         } else {
-           res="Não é um triangulo!";
+           res="NÃ£o Ã© um triangulo!";
         }
        return res;     
     }
