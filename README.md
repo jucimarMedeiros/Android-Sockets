@@ -12,3 +12,4 @@ Como utilizar:
 
 •	Na tela principal informar o IP do servidor e a porta (default 12345)
 
+Obs: Tanto o appSocket quanto os servidores devem está na mesma rede
